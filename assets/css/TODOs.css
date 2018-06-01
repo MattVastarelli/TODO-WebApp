@@ -32,7 +32,7 @@ li {
 	height: 30px;
 	font-size: 12pt;
 	padding-top: 12px;
-
+	text-indent: 15px;
 }
 /* plus sign */
 h1 i {
@@ -45,13 +45,15 @@ span i {
 	/* for the trash function the trash should be hidden and on mouse over 
 	of the li it shows */
 }
-span {
+.btn {
 	background-color: #f44336;
 	padding-top: 12px;
 	padding-bottom: 11px;
 	padding-left: 6px;
 	padding-right: 6px;
 	margin-right: 12px;
+	margin-left: 0px;
+
 }
 
 html {

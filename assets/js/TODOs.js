@@ -14,11 +14,18 @@ function colorlis () {
 //this will color all the lis in alternating colors
 colorlis();
 
-//
-$("li").on('hover', function(event) {
-	$(this).fadeIn('fast', function() {
+//this will show the trash on hover and hide on exit
+//in addtion it adjusts the text indents
+$("li").hover(function() {
+	$(this).children().fadeIn('fast', function() {
 		
 	});
+	$(this).css('text-indent', '0px');
+}, function() {
+	$(this).children().fadeOut('fast', function() {
+		$(this).parent().css('text-indent', '15px');
+	});
+	
 });
 
 //event listener for trash
