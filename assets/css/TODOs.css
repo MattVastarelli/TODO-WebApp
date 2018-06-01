@@ -8,6 +8,7 @@
 h1 {
 	background-color: #0288d1;
 	color: #f5f5f5;
+	padding-left: 15px;
 }
 
 ul {
@@ -22,15 +23,21 @@ body {
 }
 
 li {
-	color: #424242;
+	color: #616161;
+	height: 40px;
+	font-size: 18pt;
+	padding-top: 12px;
 }
 /* plus sign */
 h1 i {
-	
+	margin-left: 225px;
 }
 /* trash can */
 span i {
-
+	color: #f44336;
+	margin-right: 10px;
+	/* for the trash function the trash should be hidden and on mouse over 
+	of the li it shows */
 }
 html {
     height: 100%;

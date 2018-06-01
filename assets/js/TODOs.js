@@ -12,4 +12,15 @@ function colorlis () {
 }
 
 //--------------------------------------------------------------
+//this will color all the lis in alternating colors
 colorlis();
+
+//event listener for trash
+$("span").on('click', function(event) {
+	$(this).parent().remove();
+});
+
+//event listener for plus
+$("h1 i").on('click', function(event) {
+
+});
