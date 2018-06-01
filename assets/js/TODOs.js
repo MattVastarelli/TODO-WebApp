@@ -10,14 +10,17 @@ function colorlis () {
 		}
 	}
 }
-
+function delAndColor() {
+	$(this).parent().remove();
+	colorlis();
+}
 //--------------------------------------------------------------
 //this will color all the lis in alternating colors
 colorlis();
 
 //event listener for trash
 $("span").on('click', function(event) {
-	$(this).parent().remove();
+	delAndColor();
 });
 
 //event listener for plus
@@ -25,7 +28,24 @@ $("h1 i").on('click', function(event) {
 
 });
 
-//event listner for li
+//event listener for li
 $("li").on('click', function(event) {
 	$(this).toggleClass('toggleLine-through');;
+});
+
+//event listener to add an item
+$("input").keypress(function(event) {
+	//check for enter
+	if (event.keyCode === 13) {
+		var task = $("input").val();
+		$("input").val("");
+		//add the li
+		$("ul").append('<li><span><i class="fa fa-trash-alt"></i>' + task +'</span></li>');
+		//color the li
+		colorlis();
+		//add new listener for trash
+		$("span").last().on('click', function(event) {
+			delAndColor();
+		});
+	}
 });
