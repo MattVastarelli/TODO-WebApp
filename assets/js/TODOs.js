@@ -24,3 +24,8 @@ $("span").on('click', function(event) {
 $("h1 i").on('click', function(event) {
 
 });
+
+//event listner for li
+$("li").on('click', function(event) {
+	$(this).toggleClass('toggleLine-through');;
+});

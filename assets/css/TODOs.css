@@ -45,3 +45,7 @@ html {
     background-repeat:no-repeat;
     background: linear-gradient( to left top, #1de9b6, #90a4ae);
 }
+
+.toggleLine-through{
+	text-decoration: line-through;
+}
