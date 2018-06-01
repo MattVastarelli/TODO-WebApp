@@ -1,13 +1,13 @@
 #todolist {
 	width: 425px;
 	margin: 0 auto;
-	background-color: #0288d1;
+	background-color:#eeeeee;
 	margin-top: 100px;
 }
 
 h1 {
 	background-color: #0288d1;
-	color: #f5f5f5;
+	color: #eeeeee;
 	padding-left: 15px;
 	padding-top: 15px;
 	height: 50px;
@@ -56,10 +56,9 @@ html {
 }
 
 input {
-	background-color: #eceff1;
-	border-top: 0;
+	background-color: #eeeeee;
 	height: 35px;
-	width: 405px;
+	width: 404px;
 	margin-left: 5px;
 	margin-bottom: 5px;
 	margin-right: 5px;
@@ -67,4 +66,5 @@ input {
 	font-size: 12pt;
 	color: #1976d2;
 	padding-left: 10px;
+	outline: none;
 }
