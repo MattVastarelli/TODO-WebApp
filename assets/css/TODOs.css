@@ -32,6 +32,7 @@ li {
 	height: 30px;
 	font-size: 12pt;
 	padding-top: 12px;
+
 }
 /* plus sign */
 h1 i {
@@ -39,11 +40,20 @@ h1 i {
 }
 /* trash can */
 span i {
-	color: #f44336;
-	margin-right: 10px;
+	color: #eeeeee;
+	
 	/* for the trash function the trash should be hidden and on mouse over 
 	of the li it shows */
 }
+span {
+	background-color: #f44336;
+	padding-top: 12px;
+	padding-bottom: 11px;
+	padding-left: 6px;
+	padding-right: 6px;
+	margin-right: 12px;
+}
+
 html {
     height: 100%;
     background-size: cover;

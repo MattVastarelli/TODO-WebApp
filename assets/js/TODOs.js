@@ -14,6 +14,13 @@ function colorlis () {
 //this will color all the lis in alternating colors
 colorlis();
 
+//
+$("li").on('hover', function(event) {
+	$(this).fadeIn('fast', function() {
+		
+	});
+});
+
 //event listener for trash
 $("span").on('click', function(event) {
 	$(this).parent().fadeOut('500', function() {
