@@ -1,7 +1,7 @@
 #todolist {
 	width: 425px;
 	margin: 0 auto;
-	background-color: #cfd8dc;
+	background-color: #0288d1;
 	margin-top: 100px;
 }
 
@@ -9,6 +9,10 @@ h1 {
 	background-color: #0288d1;
 	color: #f5f5f5;
 	padding-left: 15px;
+	padding-top: 15px;
+	height: 50px;
+	margin-bottom: 0;
+	font-weight: 700;
 }
 
 ul {
@@ -20,17 +24,18 @@ ul {
 
 body {
 	font-family: Roboto;
+	font-weight: 400;
 }
 
 li {
 	color: #616161;
-	height: 40px;
-	font-size: 18pt;
+	height: 30px;
+	font-size: 12pt;
 	padding-top: 12px;
 }
 /* plus sign */
 h1 i {
-	margin-left: 225px;
+	margin-left: 220px;
 }
 /* trash can */
 span i {
@@ -48,4 +53,18 @@ html {
 
 .toggleLine-through{
 	text-decoration: line-through;
+}
+
+input {
+	background-color: #eceff1;
+	border-top: 0;
+	height: 35px;
+	width: 405px;
+	margin-left: 5px;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	border: none;
+	font-size: 12pt;
+	color: #1976d2;
+	padding-left: 10px;
 }
