@@ -1,9 +1,9 @@
 # TODO Front-End Web App
 
-### About
+## About
 Todo-list is a complete front-end web development application that I have created. This application demonstrates some of the core skills and elements of front-end web development.
 
-### Features
+## Features
 
 * Responsive design
 * Addition/Deletion of tasks 
@@ -12,5 +12,5 @@ Todo-list is a complete front-end web development application that I have create
 * Trash buttons that only show when an task is hovered over
 
 
-#### App
+## App
 ![alt text](https://github.com/MattVastarelli/TODO-WebApp/blob/master/assets/img/todo.PNG)
