@@ -3,10 +3,10 @@ function colorlis () {
 
   for(let i = 0, length1 = lis.length; i < length1; i++){
 	if (i % 2 == 0) {
-		lis[i].style.background = "#eeeeee";
+	  lis[i].style.background = "#eeeeee";
 	}
 	else {
-		lis[i].style.background = "#e0e0e0";
+	  lis[i].style.background = "#e0e0e0";
 	}
   }
 }
@@ -21,8 +21,8 @@ function showTrash () {
 	$(this).css('text-indent', '0px');
 	}, function() {
 		$(this).children().fadeOut('fast', function() {
-		   $(this).parent().css('text-indent', '15px');
-		});
+		$(this).parent().css('text-indent', '15px');
+	  });
 	});
 }
 //--------------------------------------------------------------
