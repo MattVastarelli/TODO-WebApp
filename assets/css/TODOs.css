@@ -41,9 +41,6 @@ h1 i {
 /* trash can */
 span i {
 	color: #eeeeee;
-	
-	/* for the trash function the trash should be hidden and on mouse over 
-	of the li it shows */
 }
 .btn {
 	background-color: #f44336;
