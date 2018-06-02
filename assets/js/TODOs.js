@@ -10,23 +10,25 @@ function colorlis () {
 		}
 	}
 }
+function showTrash () {
+	$("li").hover(function() {
+		$(this).children().fadeIn('fast', function() {
+		
+	});
+		$(this).css('text-indent', '0px');
+	}, function() {
+		$(this).children().fadeOut('fast', function() {
+			$(this).parent().css('text-indent', '15px');
+		});
+	});
+}
 //--------------------------------------------------------------
 //this will color all the lis in alternating colors
 colorlis();
 
 //this will show the trash on hover and hide on exit
 //in addtion it adjusts the text indents
-$("li").hover(function() {
-	$(this).children().fadeIn('fast', function() {
-		
-	});
-	$(this).css('text-indent', '0px');
-}, function() {
-	$(this).children().fadeOut('fast', function() {
-		$(this).parent().css('text-indent', '15px');
-	});
-	
-});
+showTrash();
 
 //event listener for trash
 $("span").on('click', function(event) {
@@ -54,7 +56,9 @@ $("input").keypress(function(event) {
 		var task = $("input").val();
 		$("input").val("");
 		//add the li
-		$("ul").append('<li><span><i class="fa fa-trash-alt"></i>' + task +'</span></li>');
+		$("ul").append('<li><span hidden class="btn"><i class="fa fa-trash-alt"></i></span>' + task +'</li>');
+		//add the trash 
+		showTrash();
 		//color the li
 		colorlis();
 		//add new listener for trash
@@ -66,3 +70,4 @@ $("input").keypress(function(event) {
 		});
 	}
 });
+
