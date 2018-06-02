@@ -1,3 +1,4 @@
+/*this will color all the lis in alternating colors*/
 function colorlis () {
   var lis = $("li");
 
@@ -26,7 +27,6 @@ function showTrash () {
 	});
 }
 //--------------------------------------------------------------
-/*this will color all the lis in alternating colors*/
 colorlis();
 
 showTrash();
